@@ -17,7 +17,6 @@ if __name__ == "__main__":
 
     if len(sys.argv) != 2:
         raise Exception("Require data file")
-        # sys.exit(-1)
 
     states = {"NY": "New York", "CA": "California", "FL": "Florida"}
     broadcastStates = spark.sparkContext.broadcast(states)
